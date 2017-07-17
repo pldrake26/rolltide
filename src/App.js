@@ -6,7 +6,7 @@ import Footer from './Footer.js';
 
 const Container = styled.div`
     background-color: #A60B35;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 1em;
     color: white;
     font-family: Tahoma;
