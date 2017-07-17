@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "The Alabama Crimson Tide 2017 football and scores app.",
   "main": "index.js",
+  "homepage": "https://github.com/pldrake26/rolltide",
   "author": "pldrake26@outlook.com",
   "license": "MIT",
   "scripts": {
+    "deploy": "gh-pages -d build",
     "production": "webpack -p",
     "start": "webpack-dev-server"
   },
@@ -22,6 +24,7 @@
     "browser-sync": "^2.18.12",
     "browser-sync-webpack-plugin": "^1.2.0",
     "file-loader": "^0.11.2",
+    "gh-pages": "^1.0.0",
     "html-webpack-plugin": "^2.29.0",
     "styled-components": "^2.1.1",
     "webpack": "^3.2.0",
