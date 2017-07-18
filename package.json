@@ -7,8 +7,7 @@
   "author": "pldrake26@outlook.com",
   "license": "MIT",
   "scripts": {
-    "deploy": "gh-pages -d build",
-    "production": "webpack -p",
+    "build": "webpack -p",
     "start": "webpack-dev-server"
   },
   "dependencies": {

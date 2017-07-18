@@ -7,13 +7,14 @@ const Container = styled.div`
 const Section = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
+    padding: 1% 0;
     > div {
         flex-basis: 25%;
     }
     @media screen and (max-width: 768px) {
         flex-direction: column;
         border-top: 1px solid white;
+        padding: 2% 0;
     }
 `
 
@@ -29,10 +30,10 @@ export default class Dates extends Component {
                         <span>{this.props.team}</span>
                     </div>
                     <div>
-                        <span>{this.props.time}</span>
+                        <span>Time:&nbsp;{this.props.time}</span>
                     </div>
                     <div>
-                        <span>{this.props.final}</span>
+                        <span>Score:&nbsp;{this.props.final}</span>
                     </div>
                 </Section>
             </Container>
