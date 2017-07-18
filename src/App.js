@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import Header from './Header.js';
+import SectionHeader from './SectionHeader.js';
 import Dates from './Dates.js';
 import Footer from './Footer.js';
 
@@ -23,6 +24,7 @@ export default class App extends Component {
                 <hr/>
                 <h3>Schedule:</h3>
                 <small>&#42;All times are Central Time unless otherwise noted.</small>
+                <SectionHeader />
                 <Dates date="Sep 2" team="Florida State Seminoles" time="7:00pm" final="TBD" />
                 <Dates date="Sep 9" team="Fresno State Bulldogs" time="2:30pm" final="TBD" />
                 <Dates date="Sep 16" team="Colorado State Rams" time="6:00pm" final="TBD" />

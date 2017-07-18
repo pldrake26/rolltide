@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     font-size: larger;
 `
+
 const Section = styled.div`
     display: flex;
     justify-content: space-between;
@@ -14,6 +15,7 @@ const Section = styled.div`
     @media screen and (max-width: 768px) {
         flex-direction: column;
         border-top: 1px solid white;
+        margin-top: 1%;
         padding: 2% 0;
     }
 `
@@ -30,10 +32,10 @@ export default class Dates extends Component {
                         <span>{this.props.team}</span>
                     </div>
                     <div>
-                        <span>Time:&nbsp;{this.props.time}</span>
+                        <span>{this.props.time}</span>
                     </div>
                     <div>
-                        <span>Score:&nbsp;{this.props.final}</span>
+                        <span>{this.props.final}</span>
                     </div>
                 </Section>
             </Container>
