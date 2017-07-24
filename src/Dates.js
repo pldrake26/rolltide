@@ -25,16 +25,16 @@ export default class Dates extends Component {
         return (
             <Container>
                 <Section>
-                    <div>
+                    <div id="date">
                         <span>{this.props.date}</span>
                     </div>
-                    <div>
+                    <div id="team">
                         <span>{this.props.team}</span>
                     </div>
-                    <div>
+                    <div id="time">
                         <span>{this.props.time}</span>
                     </div>
-                    <div>
+                    <div id="score">
                         <span>{this.props.final}</span>
                     </div>
                 </Section>
