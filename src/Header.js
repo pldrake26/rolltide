@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Logo from './../public/roll-tide.png';
+import Logo from './images/roll-tide.png';
 
 const StyleHeader = styled.div`
     background-color: #A60B35;
