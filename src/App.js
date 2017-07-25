@@ -6,11 +6,11 @@ import Dates from './Dates.js';
 import Footer from './Footer.js';
 
 const Container = styled.div `
-    background-color: #A60B35;
+    background-color: white;
     border-radius: 5px;
-    padding: 1em;
-    color: white;
+    color: #A60B35;
     font-family: Tahoma;
+    margin: 0.5%;
     > h2 {
         text-align: center;
     }
@@ -24,7 +24,6 @@ export default class App extends Component {
         return (
             <Container>
                 <Header/>
-                <hr/>
                 <h2>2017 Football Schedule and Scores</h2>
                 <h3>Schedule:</h3>
                 <small>&#42;All times are Central Time unless otherwise noted.</small>
@@ -43,7 +42,6 @@ export default class App extends Component {
                 <Dates date="November 18" team="Mercer Bears" time="TBD" final="TBD"/>
                 <Dates date="November 25" team="&#64;&nbsp;Auburn Tigers" time="TBD" final="TBD"/>
                 <Dates date="December 2" team="SEC Championship Game" time="3:00pm Central Time" final="TBD"/>
-                <hr/>
                 <Footer/>
             </Container>
         );

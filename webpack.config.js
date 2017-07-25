@@ -16,7 +16,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: 'babel-loader'
             }, {
-                test: /\.png$/,
+                test: /\.(jpg|png)$/,
                 use: 'file-loader'
             }
         ]

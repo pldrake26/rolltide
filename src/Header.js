@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Logo from './../public/roll-tide.png';
 
 const StyleHeader = styled.div`
+    background-color: #A60B35;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
