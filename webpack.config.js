@@ -17,7 +17,16 @@ module.exports = {
                 use: 'babel-loader'
             }, {
                 test: /\.html$/,
-                use: 'html-loader'
+                use: [
+                    {
+                        loader: 'html-loader',
+                        options: {
+                            minimize: true,
+                            removeComments: false,
+                            collapseWhitespace: false
+                        }
+                    }
+                ]
             }, {
                 test: /\.(jpg|png)$/,
                 use: [
@@ -33,9 +42,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            /*minify: {
-                collapseWhitespace: true
-            },*/
             template: __dirname + '/src/index.html',
             filename: 'index.html',
             inject: 'body'
