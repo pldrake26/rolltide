@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Section = styled.section`
     font-size: larger;
-`
-
-const Section = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 1% 0;
@@ -23,22 +20,22 @@ const Section = styled.div`
 export default class Dates extends Component {
     render() {
         return (
-            <Container>
+            <div>
                 <Section>
-                    <div id="date">
-                        <span>{this.props.date}</span>
+                    <div className="item">
+                        {this.props.date}
                     </div>
-                    <div id="team">
-                        <span>{this.props.team}</span>
+                    <div className="item">
+                        {this.props.team}
                     </div>
-                    <div id="time">
-                        <span>{this.props.time}</span>
+                    <div className="item">
+                        {this.props.time}
                     </div>
-                    <div id="score">
-                        <span>{this.props.final}</span>
+                    <div className="item">
+                        {this.props.final}
                     </div>
                 </Section>
-            </Container>
+            </div>
         );
     }
 }

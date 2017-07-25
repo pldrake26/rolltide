@@ -49,7 +49,7 @@ module.exports = {
         }, {reload: false})
     ],
     devServer: {
-        contentBase: path.join(__dirname, "public"),
+        contentBase: path.join(__dirname, 'src'),
         compress: true,
         hot: true,
         port: 3000,
