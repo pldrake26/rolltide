@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const TableHeader = styled.div`
     display: flex;
     justify-content: space-between;
-    padding-top: 2%;
+    margin-top: 2%;
+    margin-left: 16%;
     > div {
         flex-basis: 25%;
     }

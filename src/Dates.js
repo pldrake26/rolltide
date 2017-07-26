@@ -1,40 +1,51 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
-const Section = styled.section`
+
+const Container = styled.section`
     font-size: larger;
-    display: flex;
+    margin-top: 1%;
+`
+
+const TeamRow = styled.div`
+    border-top: 1px solid #A60B35;
     padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
     > div {
         flex-basis: 25%;
+        align-self: center;
+    }
+    >div img {
+        width: 50%;
+        height: auto;
+        align-self: center;
     }
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        border-top: 1px solid #A60B35;
-        margin-top: 1%;
-        padding: 2% 0;
+        > div {
+            flex-basis: 0;
+            align-self: flex-start;
+        }
+        >div img {
+            width: 8em;
+            height: auto;
+        }
     }
 `
 
 export default class Dates extends Component {
     render() {
         return (
-            <div>
-                <Section>
-                    <div className="item">
-                        {this.props.date}
-                    </div>
-                    <div className="item">
-                        {this.props.team}
-                    </div>
-                    <div className="item">
-                        {this.props.time}
-                    </div>
-                    <div className="item">
-                        {this.props.final}
-                    </div>
-                </Section>
-            </div>
+            <Container>
+                <TeamRow>
+                    <div><img src={this.props.helmet} alt="" /></div>
+                    <div>{this.props.date}</div>
+                    <div>{this.props.team}</div>
+                    <div>{this.props.time}</div>
+                    <div>{this.props.final}</div>
+                </TeamRow>
+            </Container>
         );
     }
 }

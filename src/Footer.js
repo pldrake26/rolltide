@@ -6,6 +6,7 @@ const PageFooter = styled.div`
     color: white;
     font-weight: bold;
     padding: 1%;
+    margin-top: 1%;
 `
 
 export default class Footer extends Component {
