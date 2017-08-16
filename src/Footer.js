@@ -13,7 +13,9 @@ export default class Footer extends Component {
   render() {
     return (
       <PageFooter>
-        <p>&copy;2017 - Coded by Phillip L. Drake using React. - Logo is a trademark of the University of Alabama.</p>
+        <p>&copy;2017 - Coded by Phillip L. Drake using React.</p>
+        <p>Logo is a trademark of the University of Alabama.<br/>
+        Helmets are trademarks of the individual colleges and the NCAA.</p>
         <p>In memory of Troy Perigen, Joe and Lucy Morris, and their love of Alabama football.</p>
       </PageFooter>
     );
