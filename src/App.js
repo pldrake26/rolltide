@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from './Header.js';
 import Dates from './Dates.js';
 import Footer from './Footer.js';
+import SectionHeader from './SectionHeader.js';
 import FloridaLogo from './images/fsu.jpg';
 import BullDogs from './images/bulldogs.png';
 import ColoradoState from './images/colo-rams.jpg';
@@ -42,6 +43,7 @@ export default class App extends Component {
         <h2>2017 Football Schedule and Scores</h2>
         <h3>Schedule:</h3>
         <small>&#42;All times are Central Time unless otherwise noted.</small>
+        <SectionHeader/>
         <Dates helmet={FloridaLogo} date="September 2" team="Florida State Seminoles" time="7:00pm" final="TBD"/>
         <Dates helmet={BullDogs} date="September 9" team="Fresno State Bulldogs" time="2:30pm" final="TBD"/>
         <Dates helmet={ColoradoState} date="September 16" team="Colorado State Rams" time="6:00pm" final="TBD"/>

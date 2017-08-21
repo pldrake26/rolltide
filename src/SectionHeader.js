@@ -3,11 +3,10 @@ import styled from 'styled-components';
 
 const TableHeader = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 2%;
-  margin-left: 16%;
   > div {
-    flex-basis: 25%;
+    flex-basis: 20%;
   }
   >div span {
     font-weight: bolder;
@@ -23,16 +22,19 @@ export default class SectionHeader extends Component {
     return (
       <TableHeader>
         <div>
-            <span>Date</span>
+          <span>Helmet</span>
         </div>
         <div>
-            <span>Team</span>
+          <span>Date</span>
         </div>
         <div>
-            <span>Time</span>
+          <span>Team</span>
         </div>
         <div>
-            <span>Score</span>
+          <span>Time</span>
+        </div>
+        <div>
+          <span>Score</span>
         </div>
       </TableHeader>
     );
