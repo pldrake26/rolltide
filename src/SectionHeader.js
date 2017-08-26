@@ -8,9 +8,8 @@ const TableHeader = styled.div`
   > div {
     flex-basis: 20%;
   }
-  >div span {
+  >div h3 {
     font-weight: bolder;
-    text-decoration: underline;
   }
   @media screen and (max-width: 768px) {
     display: none;
@@ -22,19 +21,19 @@ export default class SectionHeader extends Component {
     return (
       <TableHeader>
         <div>
-          <span>Helmet</span>
+          <h3>Helmet</h3>
         </div>
         <div>
-          <span>Date</span>
+          <h3>Date</h3>
         </div>
         <div>
-          <span>Team</span>
+          <h3>Team</h3>
         </div>
         <div>
-          <span>Time</span>
+          <h3>Time</h3>
         </div>
         <div>
-          <span>Score</span>
+          <h3>Score</h3>
         </div>
       </TableHeader>
     );
