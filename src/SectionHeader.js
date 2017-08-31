@@ -1,16 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
-const TableHeader = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 2%;
-  > div {
-    flex-basis: 20%;
-  }
-  >div h3 {
-    font-weight: bolder;
-  }
+const StyledRow = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -19,23 +10,23 @@ const TableHeader = styled.div`
 export default class SectionHeader extends Component {
   render() {
     return (
-      <TableHeader>
-        <div>
-          <h3>Helmet</h3>
+      <StyledRow className="row mt-sm-5">
+        <div className="col-sm">
+          <h4>Helmet</h4>
         </div>
-        <div>
-          <h3>Date</h3>
+        <div className="col-sm">
+          <h4>Date</h4>
         </div>
-        <div>
-          <h3>Team</h3>
+        <div className="col-sm">
+          <h4>Team</h4>
         </div>
-        <div>
-          <h3>Time</h3>
+        <div className="col-sm">
+          <h4>Time</h4>
         </div>
-        <div>
-          <h3>Score</h3>
+        <div className="col-sm">
+          <h4>Score</h4>
         </div>
-      </TableHeader>
+      </StyledRow>
     );
   }
 }

@@ -18,30 +18,18 @@ import MissState from './images/miss-state.jpg';
 import MercerBears from './images/mercer.jpg';
 import AuburnTigers from './images/autigers.jpg';
 
-const Container = styled.div `
-    background-color: white;
-    border-radius: 5px;
-    color: #A60B35;
-    font-family: Tahoma;
-    margin: 0.5%;
-    > h2 {
-        text-align: center;
-    }
-    > h3 {
-        margin-top: 3%;
-    }
-    > h2, h3 {
-        font-weight: bold;
-    }
-`
+const styles = {
+  color: "#A60B35",
+  fontWeight: "bold",
+}
 
 export default class App extends Component {
   render() {
     return (
-      <Container>
+      <div className="container-fluid" style={styles}>
         <Header/>
-        <h2>2017 Football Schedule and Scores</h2>
-        <h3>Schedule:</h3>
+        <h3 className="text-center mt-5">2017 Football Schedule and Scores</h3>
+        <h4 className="mt-sm-5">Schedule:</h4>
         <small>&#42;All times are Central Time unless otherwise noted.</small>
         <SectionHeader/>
         <Dates helmet={FloridaLogo} date="September 2" team="Florida State Seminoles" time="7:00pm" final="TBD"/>
@@ -59,7 +47,7 @@ export default class App extends Component {
         <Dates helmet={AuburnTigers} date="November 25" team="&#64;&nbsp;Auburn Tigers" time="TBD" final="TBD"/>
         <Dates helmet={Tide} date="December 2" team="SEC Championship Game" time="3:00pm Central Time" final="TBD"/>
         <Footer/>
-      </Container>
+      </div>
     );
   }
 }

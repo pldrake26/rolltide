@@ -12,6 +12,9 @@ module.exports = {
     module: {
         rules: [
             {
+              test: /\.css$/,
+              use: [ 'style-loader', 'css-loader' ]
+            }, {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
@@ -46,6 +49,12 @@ module.exports = {
             template: __dirname + '/src/index.html',
             filename: 'index.html',
             inject: 'body'
+        }),
+        new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery',
+          'window.jQuery': 'jquery',
+          Popper: ['popper.js', 'default']
         }),
         new webpack.HotModuleReplacementPlugin(),
         new BrowserSyncPlugin({
