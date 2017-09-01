@@ -28,9 +28,9 @@ export default class App extends Component {
     return (
       <div className="container-fluid" style={styles}>
         <Header/>
-        <h3 className="text-center mt-5">2017 Football Schedule and Scores</h3>
-        <h4 className="mt-sm-5">Schedule:</h4>
-        <small>&#42;All times are Central Time unless otherwise noted.</small>
+        <h3 className="text-center pt-5 pb-5">2017 Football Schedule and Scores</h3>
+        <h4>Schedule:</h4>
+        <small><p>&#42;All times are Central Time unless otherwise noted.</p></small>
         <SectionHeader/>
         <Dates helmet={FloridaLogo} date="September 2" team="Florida State Seminoles" time="7:00pm" final="TBD"/>
         <Dates helmet={BullDogs} date="September 9" team="Fresno State Bulldogs" time="2:30pm" final="TBD"/>
