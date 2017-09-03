@@ -14,7 +14,9 @@ export default class Dates extends Component {
           <div className="col-sm mt-sm-4">{this.props.date}</div>
           <div className="col-sm mt-sm-4">{this.props.team}</div>
           <div className="col-sm mt-sm-4">{this.props.time}</div>
-          <div className="col-sm mt-sm-4">{this.props.final}</div>
+          {
+            this.props.outcome === "WIN" ? <div className="col-sm mt-sm-4 text-success">{this.props.outcome} {this.props.final}</div> : this.props.outcome === "LOSE" ? <div className="col-sm mt-sm-4 text-danger">{this.props.outcome} {this.props.final}</div> : <div className="col-sm mt-sm-4 text-primary">{this.props.outcome} {this.props.final}</div>
+          }
         </div>
     );
   }

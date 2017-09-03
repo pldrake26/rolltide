@@ -32,20 +32,20 @@ export default class App extends Component {
         <h4>Schedule:</h4>
         <small><p>&#42;All times are Central Time unless otherwise noted.</p></small>
         <SectionHeader/>
-        <Dates helmet={FloridaLogo} date="September 2" team="Florida State Seminoles" time="7:00pm" final="TBD"/>
-        <Dates helmet={BullDogs} date="September 9" team="Fresno State Bulldogs" time="2:30pm" final="TBD"/>
-        <Dates helmet={ColoradoState} date="September 16" team="Colorado State Rams" time="6:00pm" final="TBD"/>
-        <Dates helmet={Commodores} date="September 23" team="&#64;&nbsp;Vanderbilt Commodores" time="TBD" final="TBD"/>
-        <Dates helmet={Rebels} date="September 30" team="Ole Miss Rebels" time="TBD" final="TBD"/>
-        <Dates helmet={Aggies} date="October 7" team="&#64;&nbsp;Texas A&M Aggies" time="TBD" final="TBD"/>
-        <Dates helmet={Razorbacks} date="October 14" team="Arkansas Razorbacks" time="TBD" final="TBD"/>
-        <Dates helmet={Vols} date="October 21" team="Tennessee Volunteers" time="TBD" final="TBD"/>
-        <Dates helmet={Tide} date="October 28" team="OPEN DATE" time="" final=""/>
-        <Dates helmet={LsuTigers} date="November 4" team="LSU Tigers" time="TBD" final="TBD"/>
-        <Dates helmet={MissState} date="November 11" team="&#64;&nbsp;Mississippi State Bulldogs" time="TBD" final="TBD"/>
-        <Dates helmet={MercerBears} date="November 18" team="Mercer Bears" time="TBD" final="TBD"/>
-        <Dates helmet={AuburnTigers} date="November 25" team="&#64;&nbsp;Auburn Tigers" time="TBD" final="TBD"/>
-        <Dates helmet={Tide} date="December 2" team="SEC Championship Game" time="3:00pm Central Time" final="TBD"/>
+        <Dates helmet={FloridaLogo} date="September 2" team="Florida State Seminoles" time="7:00pm" outcome="WIN" final="24-7"/>
+        <Dates helmet={BullDogs} date="September 9" team="Fresno State Bulldogs" time="2:30pm" outcome="" final="TBD"/>
+        <Dates helmet={ColoradoState} date="September 16" team="Colorado State Rams" time="6:00pm" outcome = "" final="TBD"/>
+        <Dates helmet={Commodores} date="September 23" team="&#64;&nbsp;Vanderbilt Commodores" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={Rebels} date="September 30" team="Ole Miss Rebels" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={Aggies} date="October 7" team="&#64;&nbsp;Texas A&M Aggies" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={Razorbacks} date="October 14" team="Arkansas Razorbacks" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={Vols} date="October 21" team="Tennessee Volunteers" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={Tide} date="October 28" team="OPEN DATE" time="" outcome="" final=""/>
+        <Dates helmet={LsuTigers} date="November 4" team="LSU Tigers" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={MissState} date="November 11" team="&#64;&nbsp;Mississippi State Bulldogs" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={MercerBears} date="November 18" team="Mercer Bears" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={AuburnTigers} date="November 25" team="&#64;&nbsp;Auburn Tigers" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={Tide} date="December 2" team="SEC Championship Game" time="3:00pm Central Time" outcome="" final="TBD"/>
         <Footer/>
       </div>
     );
