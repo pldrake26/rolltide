@@ -35,8 +35,8 @@ export default class App extends Component {
         <Dates helmet={FloridaLogo} date="September 2" team="Florida State Seminoles" time="7:00pm" outcome="WIN" final="24-7"/>
         <Dates helmet={BullDogs} date="September 9" team="Fresno State Bulldogs" time="2:30pm" outcome="WIN" final="41-10"/>
         <Dates helmet={ColoradoState} date="September 16" team="Colorado State Rams" time="6:00pm ESPN2" outcome = "WIN" final="41-23"/>
-        <Dates helmet={Commodores} date="September 23" team="&#64;&nbsp;Vanderbilt Commodores" time="2:30pm CBS" outcome="" final="TBD"/>
-        <Dates helmet={Rebels} date="September 30" team="Ole Miss Rebels" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={Commodores} date="September 23" team="&#64;&nbsp;Vanderbilt Commodores" time="2:30pm CBS" outcome="WIN" final="59-0"/>
+        <Dates helmet={Rebels} date="September 30" team="Ole Miss Rebels" time="8:00pm" outcome="" final="TBD"/>
         <Dates helmet={Aggies} date="October 7" team="&#64;&nbsp;Texas A&M Aggies" time="TBD" outcome="" final="TBD"/>
         <Dates helmet={Razorbacks} date="October 14" team="Arkansas Razorbacks" time="TBD" outcome="" final="TBD"/>
         <Dates helmet={Vols} date="October 21" team="Tennessee Volunteers" time="TBD" outcome="" final="TBD"/>
