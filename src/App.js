@@ -39,7 +39,7 @@ export default class App extends Component {
         <Dates helmet={Rebels} date="September 30" team="Ole Miss Rebels" time="8:00pm ESPN" outcome="WIN" final="66-3"/>
         <Dates helmet={Aggies} date="October 7" team="&#64;&nbsp;Texas A&M Aggies" time="6:15pm ESPN" outcome="WIN" final="27-19"/>
         <Dates helmet={Razorbacks} date="October 14" team="Arkansas Razorbacks" time="6:15pm ESPN" outcome="WIN" final="41-9"/>
-        <Dates helmet={Vols} date="October 21" team="Tennessee Volunteers" time="2:30pm CBS" outcome="" final="TBD"/>
+        <Dates helmet={Vols} date="October 21" team="Tennessee Volunteers" time="2:30pm CBS" outcome="WIN" final="45-7"/>
         <Dates helmet={Tide} date="October 28" team="OPEN DATE" time="" outcome="" final=""/>
         <Dates helmet={LsuTigers} date="November 4" team="LSU Tigers" time="TBD" outcome="" final="TBD"/>
         <Dates helmet={MissState} date="November 11" team="&#64;&nbsp;Mississippi State Bulldogs" time="TBD" outcome="" final="TBD"/>
