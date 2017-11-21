@@ -43,8 +43,8 @@ export default class App extends Component {
         <Dates helmet={Tide} date="October 28" team="OPEN DATE" time="" outcome="" final=""/>
         <Dates helmet={LsuTigers} date="November 4" team="LSU Tigers" time="7:00pm CBS" outcome="WIN" final="24-10"/>
         <Dates helmet={MissState} date="November 11" team="&#64;&nbsp;Mississippi State Bulldogs" time="6:00pm ESPN" outcome="WIN" final="31-24"/>
-        <Dates helmet={MercerBears} date="November 18" team="Mercer Bears" time="11:00am SECNet" outcome="" final="TBD"/>
-        <Dates helmet={AuburnTigers} date="November 25" team="&#64;&nbsp;Auburn Tigers" time="TBD" outcome="" final="TBD"/>
+        <Dates helmet={MercerBears} date="November 18" team="Mercer Bears" time="11:00am SECNet" outcome="WIN" final="56-0"/>
+        <Dates helmet={AuburnTigers} date="November 25" team="&#64;&nbsp;Auburn Tigers" time="2:30pm CBS" outcome="" final="TBD"/>
         <Dates helmet={Tide} date="December 2" team="SEC Championship Game" time="3:00pm Central Time" outcome="" final="TBD"/>
         <Footer/>
       </div>
